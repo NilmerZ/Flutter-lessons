@@ -1,11 +1,16 @@
-Future<void> main () async {
+
+void main () {
 
 // Задание 1
  var List1  = [1, 7, 12, 3, 56, 2, 87, 34, 54];
+ var list =  [1, 7, 12, 3, 56, 2, 87, 34, 54];
 
 print(List1.first);
 print(List1[4]);
 print(List1.last);
+ print(list.first);
+ print(list[4]);
+print(list.last);
 
 // Задание 2
 var list2 = [3, 12, 43, 1, 25, 6, 5, 7];
@@ -17,9 +22,15 @@ print(list2 + list3);
 // Решение 1 вариант
 //var list4  = ['a','d','F','l','u','t','t','e','R','y','3','b','h','j'];
 //var list5 = ['F','l','u','t','t','e','R'];
+var listOne = [3, 12, 43, 1, 25, 6, 5, 7];
+var listTwo = [55, 11, 23, 56, 78, 1, 9];
 
+listOne.addAll(listTwo);
+print (listOne);
 
+var set1= ['a','d','F','l','u','t','t','e','R','y','3','b','h','j'];
 
+var set2 =['F','l','u','t','t','e','R'];
 
 //задание 3 Решение 2 вариант 
 final characters1 = <String>{'a','d','F','l','u','t','t','e','R','y','3','b','h','j'};
@@ -59,12 +70,13 @@ print(list6.contains('Flutter'));
 
 // Задание 7 
 
-var listtwo = ['"I"', '"Started"', '"Learn"', '"Flutter"', '"Since"', '"April"'];
+var listtwo = ['I', 'Started', 'Learn', 'Flutter', 'Since', 'April'];
 //var listtwo = ['"I", "Started", "Learn", "Flutter", "Since", "April"'];
 
-var myFlutter =  'String myFlutter';
+var myFlutter =  listtwo.join('*');
 
-print(listtwo.join("*"));
+
+print(myFlutter);
 
 // Задание 8 
 
@@ -77,20 +89,4 @@ print(numbers);
 
 
 
-
 }
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
