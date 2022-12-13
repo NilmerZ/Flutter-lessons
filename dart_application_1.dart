@@ -1,120 +1,64 @@
 import 'dart:math';
 
 void main() {
-  // If else практика - 1.
-    var intValue = Random().nextInt(6);
+  // Домашнее задание Else IF № 1
+var num1 = Random().nextInt(24);
+
+print(num1);
+
+if (num1 <=19 && num1 >= 6){
+  print('На улице светло');
+}else if (num1 >= 19){
+  print('На улице темно');
+}else if (num1 < 6){
+print('На улице темно');
+}else print('Invalid time');
+
+
+// Домашнее задание Else IF № 2
+
+
+
+
+// Домашнее задание Else IF № 3
+var intValue1 = Random().nextInt(12);
     print(intValue);
     if (intValue == 1) {
-      print('Большой палец');
+      print('Январь, зима');
     } else if (intValue == 2) {
-      print('Указательный палец');
+      print('Февраль, зима');
     } else if (intValue == 3) {
-      print('Средний палец');
+      print('Март, весна');
     } else if (intValue == 4) {
-      print('Безымянный палец');
+      print('Апрель, весна');
     } else if (intValue == 5) {
-      print('Мезинец');
+      print('Май, весна');
     } else if (intValue == 6) {
-      print('Error');
-  }
-
-  // If else практика - 2.
-
-  var min = Random().nextInt(59);
-
-  print(min);
-  if (min <= 15) {
-
-  print('1-четверть часа');
-  }else if (min == 16 <= 30){
-    print ('2-четверть часа');
-  }else if (min == 31 <= 44){
-    print('3-четверть часа');
-  }else if (min == 45 <= 59){
-    print('4-четверть часа');
-  }  
-
-  // If else практика - 3.
-  String lang = 'Eng';
-  List arr=[];
-  List q = ['Пн', 'Вт','Ср','Чт','Пт','Сб','Вс'];
-  List w = ['Su','Mo','Tu','We','Th','Fr','Sa'];
-
-  if (lang == 'Ru') {
-  arr = q;
-  } else if (lang == 'Eng') {
-    arr = w;
-  } else
-    print('Error');
-  print(arr);
-
-  // If else практика - 3.1
-  
-String a = 'abcde';
-  if (a[0] == 'a') {
-    print('Yes');
-  } else {
-    print('No');
-  }
-
- // If else практика - 3.2
-
-   var num = Random().nextInt(5);
-  
-  String result;
-
-     if (num == 1) {
-      result = 'Зима';
-    } else if (num == 2) {
-      result = 'Весна';
-    } else if (num == 3) {
-      result = 'Лето';
-    } else if (num == 4) {
-      result = 'Осень';
-    } else {
-      result = 'Ошибка';
-    
-    }
-print(result);
-print(num);
-
-// If else практика - 3.3
-int xxx = -3;
-if (xxx <= 0){
-  print('True');
-} else print('false');
+      print('Июнь, лето');
+    } else if (intValue == 7) {
+      print('Июль, лето');
+    } else if (intValue == 8) {
+      print('Август, лето');
+    } else if (intValue == 9) {
+      print('Сентябрь, осень');
+    } else if (intValue == 10) {
+      print('Октябрь, осень');
+    } else if (intValue == 11) {
+      print('Ноябрь, осень');
+    } else if (intValue == 12) {
+      print('Декабрь, зима');
+    } else print('Ошибка');
 
 
-// If else практика - 4
-String v = '123123';
+int income = Random(10000).nextInt(400000);
+print(income);
 
-int sumone  = int.parse(v[0])+int.parse(v[1])+int.parse(v[2]);
-int sumtwo  = int.parse(v[3])+int.parse(v[4])+int.parse(v[5]);
-
-if (sumone == sumtwo){
-  print('True');
-}else print('false');
-
-
-// If else практика - 5
-
-
- String signal = 'green';
- String ary = '';
-  String qw = 'стоять';
-  String we = 'приготовиться';
-  String er = 'идти';
-
-
-  if (signal == 'yelow') {
-  ary = we;
-  } else if (signal == 'green') {
-    ary = er;
-  } else if (signal == 'red') {
-    ary = qw;
-  }
-  print(ary);
-
+if (income <= 100000 ){
+  print(income * 0.05);
+}else if (income >=  100000 && income <= 200000){
+  print(income * 0.07);
+}else if (income >= 200000 && income <= 500000){
+  print(income * 0.1);
 
 }
-
+}
