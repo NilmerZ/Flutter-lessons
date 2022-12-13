@@ -53,4 +53,11 @@ return false;
 }
 }
 
-
+// Ошибка null-???
+bool isn (int a){
+  if (a <= 0){
+return true;
+}else if (a >= 0){
+  return false;
+}
+}
