@@ -19,7 +19,7 @@ print('На улице темно');
 
 // Домашнее задание Else IF № 2
 
-int income = Random(10000).nextInt(500000);
+int income = Random().nextInt(490000) + 10000;
 print(income);
 int fix1 = 5;
 int fix2 = 7;
