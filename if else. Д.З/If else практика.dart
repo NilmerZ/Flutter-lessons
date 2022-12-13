@@ -21,13 +21,19 @@ print('На улице темно');
 
 int income = Random(10000).nextInt(500000);
 print(income);
+int fix1 = 5;
+int fix2 = 7;
+int fix3 = 10;
 
 if (income <= 100000 ){
   print(income * 0.05);
+  print(fix1);
 }else if (income >=  100000 && income <= 200000){
   print(income * 0.07);
+  print(fix2);
 }else if (income >= 200000 && income <= 500000){
   print(income * 0.1);
+  print(fix3);
 }
 
 
